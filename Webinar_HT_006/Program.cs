@@ -7,16 +7,10 @@
 
 Console.Clear();
 
-Console.WriteLine("Добрый день, пользователь! Данная программа позволяет определить является ли вводимое число четным.");
+Console.WriteLine("Приветствую, пользователь! Данная программа позволяет определить является ли вводимое число четным.");
 
 Console.Write("Введите число: ");
-int a = int.Parse(Console.ReadLine()!);
+int number = int.Parse(Console.ReadLine()!);
 
-if(a % 2 == 0)
-{
-    Console.WriteLine($"Число {a} является четным");
-}
-else 
-{
-    Console.WriteLine($"Число {a} является нечетным");
-}
+if (number % 2 == 0) Console.WriteLine($"Число {number} является четным");
+else Console.WriteLine($"Число {number} является нечетным");

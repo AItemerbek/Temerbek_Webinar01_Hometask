@@ -5,26 +5,26 @@ a = 2 b = 10 -> max = 10
 a = -9 b = -3 -> max = -3 */
 Console.Clear();
 
-Console.WriteLine("Добрый день, пользователь! Данная программа позволяет найти большее число из двух вводимых.");
+Console.WriteLine("Приветствую, пользователь! Данная программа позволяет найти большее число из двух вводимых.");
 
 Console.Write("Введите первое число: ");
-int a = int.Parse(Console.ReadLine()!);
+int firstNumber = int.Parse(Console.ReadLine()!);
 
 Console.Write("Введите второе число: ");
-int b = int.Parse(Console.ReadLine()!);
+int secondNumber = int.Parse(Console.ReadLine()!);
 
-if(a == b)
+if (firstNumber == secondNumber)
 {
-    Console.Write($"Числа {a} и {b} равны");
+    Console.Write($"Числа {firstNumber} и {secondNumber} равны");
 }
 else
 {
-    if(a > b) 
+    if (firstNumber > secondNumber)
     {
-        Console.Write($"Число {a} больше числа {b}"); 
+        Console.Write($"Число {firstNumber} больше числа {secondNumber}");
     }
     else
     {
-        Console.Write($"Число {b} больше числа {a}"); 
+        Console.Write($"Число {secondNumber} больше числа {firstNumber}");
     }
 }

@@ -7,26 +7,20 @@
 
 Console.Clear();
 
-Console.WriteLine("Добрый день, пользователь! Данная программа позволяет найти наибольшее число из трех вводимых.");
+Console.WriteLine("Приветствую, пользователь! Данная программа позволяет найти наибольшее число из трех вводимых.");
 
 Console.Write("Введите первое число: ");
-int a = int.Parse(Console.ReadLine()!);
+int firstNumber = int.Parse(Console.ReadLine()!);
 
 Console.Write("Введите второе число: ");
-int b = int.Parse(Console.ReadLine()!);
+int secondNumber = int.Parse(Console.ReadLine()!);
 
 Console.Write("Введите третье число: ");
-int c = int.Parse(Console.ReadLine()!);
+int thirdNumber = int.Parse(Console.ReadLine()!);
 
-int maxnumber = a;
+int maxNumber = firstNumber;
 
-if(b > maxnumber)
-{
-    maxnumber = b;
-}
-if(c > maxnumber)
-    {
-        maxnumber = c;
-    }
+if (secondNumber > maxNumber) maxNumber = secondNumber;
+if (thirdNumber > maxNumber) maxNumber = thirdNumber;
 
-Console.Write($"Из чисел {a}, {b}, {c},  наибольшее число {maxnumber}"); 
+Console.Write($"Из чисел {firstNumber}, {secondNumber}, {thirdNumber},  наибольшее число {maxNumber}");
